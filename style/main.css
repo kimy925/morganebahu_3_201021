@@ -1,0 +1,23 @@
+.logo{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    min-height: 60px;
+    border-top: solid 2px white;
+}
+.chercher{
+    border: none;
+}
+.search-input{
+    border: none;
+    outline: none;
+    margin-left: 1rem;
+}

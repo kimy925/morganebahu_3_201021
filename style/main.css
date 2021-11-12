@@ -1,23 +1,25 @@
 .logo{
-    width: 100vw;
-    height: 100vh;
+    height: 100px;
     display: flex;
-    position: absolute;
-    background-color: white;
     justify-content: center;
-    align-items: center;
 }
 .search{
     display: flex;
     justify-content: center;
-    min-height: 60px;
-    border-top: solid 2px white;
-}
-.chercher{
+    background-color: grey;
     border: none;
 }
-.search-input{
-    border: none;
-    outline: none;
-    margin-left: 1rem;
+.titre{
+    font-weight: bolder;
+    text-align: center;
+    font-size: x-large;
+}
+.description{
+    font-weight: lighter;
+    text-align: center;
+    font-size: medium;
+}
+.bloc{
+     background-color: lightgray;
+
 }

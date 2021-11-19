@@ -8,6 +8,7 @@
        <meta charset="utf-8" />
        <title> oh my food </title> 
        <link rel="stylesheet" href="style/main.css">
+       <script src="https://kit.fontawesome.com/62fcdbaed7.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -15,13 +16,38 @@
                 <img src="./images/ohmyfood.png" alt="ohmyfood">
             </div>
             <div class="search">
-                    <button class="btn"></button>
-                    <input type="text" value="Paris, belleville" size="30"  >
+                <button><i class="fa-solid fa-location-dot"></i> </button>
+                <input class="location" type="text" value="Paris, belleville" size="30"  >
             </div>
             <div class="bloc">
-                <p class="titre">Reserver le menu qui vous convient</p>
+                <h1 class="titre">Reserver le menu qui vous convient</h1>
                 <p class="description">Découvrez des restaurants d'exception,selectionnés par nos soins.</p>
+                <input class="explorer" type="button"value="Explorer nos restaurants">
             </div>
+            <div class="rules">
+                <h1>Fonctionnement</h1>
+                <input class="boutons" type="button" value="choisissez un restaurant">
+                <input class="boutons" type="button" value="Composez votre menue">
+                <input class="boutons" type="button" value="Dégustez au restaurant">
+            </div>
+            <h1>Restaurants</h1>
+            <div class="images">   
+                <div class="restaurants">
+                    <img src="./images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="palette du gout">
+                </div>
+                <div class="new">    
+                    <p>nouveau</p>
+                </div> 
+                <div class="restaurant__elements">
+                    <div class="restaurant__elements__noms">
+                        <h2>La palette du gout</h2>
+                        <h3>Menilmontant</h3>
+                    </div>
+                    <div class="restaurants__elements__heart">
+                        <i class="far fa-heart"></i>
+                    </div>    
+                </div>   
+            </div>    
         </header>
     </body>
     <footer>

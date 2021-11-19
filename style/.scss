@@ -35,22 +35,40 @@
    background: linear-gradient(rgba(255,69,201,1)17%,rgba(123,57,196,1)97%);
 }
 .boutons{
-    border-radius: 10px;
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
-    background-color: #f6f6f6;
-    border: none;
-    box-shadow: 0 5px 10px #c3c3c3;
-    display: flex;
-    padding: 1rem 3rem 1rem 3rem;
-    font-weight: bolder;
+        border-radius: 10px;
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+        background-color: #f6f6f6;
+        border: none;
+        box-shadow: 0 5px 10px #c3c3c3;
+        display: flex;
+        padding: 1rem 3rem 1rem 3rem;
+        font-weight: bolder;
 }
 .restaurants{
-    height: 15rem;
-    width: 10rem;
+    width: 100%
+    height: 150%;
     border-radius: 1rem ;
-    display: flex;
+    object-fit: cover;
+}    
+.restaurants__elements{
+    h2{
+        font-weight: bold;
+    }
+}
+.images{
+    margin: 5rem 1rem 5rem 1rem;
+    width: 20rem;
+    height: 15rem;
     background-color: white;
+    border-radius: 1rem;
     box-shadow: 5px 5px 20px #cccaca;
     margin: 2rem;
-}    
+    display: block;
+}
+.new{
+    right: 10px;
+    top: 10px;
+    color: green;
+    background-color: rgb(134, 209, 134);
+}

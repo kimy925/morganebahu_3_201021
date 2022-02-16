@@ -1,0 +1,326 @@
+@charset "UTF-8";
+/*Bannière*/
+.photo__restaurant img {
+  width: 100%;
+  max-height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*Carte restaurant*/
+.card__title {
+  font-family: 'Shrikhand', cursive;
+  max-width: 322px;
+}
+
+.fa-heart:before {
+  margin-left: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .card__global {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.card {
+  background-color: #F6F6F6;
+  padding: 36px 21px;
+  margin-top: -27px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.card .far {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.card h2 {
+  margin-bottom: 35px;
+}
+
+.entrees {
+  margin-bottom: 27px;
+}
+
+.entrees h2::after {
+  content: '';
+  display: block;
+  width: 43px;
+  height: 3px;
+  background: #99E2D0;
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.card__global__entrees {
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
+}
+
+@media screen and (min-width: 1140px) {
+  .card__global__entrees {
+    margin-right: 10px;
+  }
+}
+
+.card__global__plats {
+  -webkit-animation: fadein 4s;
+          animation: fadein 4s;
+}
+
+@media screen and (min-width: 1142px) {
+  .card__global__plats {
+    margin-right: 10px;
+  }
+}
+
+.card__global__desserts {
+  -webkit-animation: fadein 6s;
+          animation: fadein 6s;
+}
+
+.card__global__entrees h2,
+.card__global__plats h2,
+.card__global__desserts h2 {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.card__global__contenu {
+  background-color: #FFF;
+  max-width: 350px;
+  height: 70px;
+  -webkit-box-shadow: 0.25rem 0.25rem 1rem 0 0 0/0.01;
+          box-shadow: 0.25rem 0.25rem 1rem 0 0 0/0.01;
+  padding: 0 0 0 16px;
+  border-radius: .75rem;
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 400px) and (max-width: 1024px) {
+  .card__global__contenu {
+    max-width: none;
+  }
+}
+
+.card__global__contenu__dish {
+  width: 350px;
+  padding: 14px 0;
+  border-radius: .75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__global__contenu__dish h3 {
+  font-size: 16px;
+}
+
+.card__global__contenu__dish h4 {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .card__global__contenu__dish h3 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .card__global__contenu__dish h4 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+.card__global__contenu:hover .card__global__contenu__dish__confirmation {
+  margin-right: 0px;
+  min-width: 4rem;
+  -webkit-transition: margin-right 0.5s;
+  transition: margin-right 0.5s;
+}
+
+.card__global__contenu:hover .header_menu {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.card__global__contenu:hover .header_menu h3 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.card__global__contenu:hover .header_menu h4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 405px) {
+  .card__global__contenu:hover .header_menu {
+    max-width: 130px;
+  }
+}
+
+.card__global__contenu:hover .circle {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.card__global__contenu__dish__confirmation {
+  background-color: #99E2D0;
+  min-width: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: -64px;
+}
+
+.circle {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 100px;
+  background: #FFF;
+  color: #99E2D0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.circle .fas {
+  margin-left: 4px;
+}
+
+.center {
+  text-align: center;
+}
+
+.card__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-weight: bold;
+  margin-right: 20px;
+  width: 25%;
+}
+
+.header_menu {
+  width: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-overflow: ellipsis;
+}
+
+.header_menu h3 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.header_menu h4 {
+  font-weight: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/*Bouton Commander*/
+.bouton__commander {
+  padding: 30px 0 80px 0;
+  text-align: center;
+  background-color: #F6F6F6;
+}
+
+.bouton__commander--pink {
+  background-color: #9356DC;
+  padding: 15px 50px;
+  border-radius: 30px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #FFF;
+  font-weight: normal;
+  font-size: 18px;
+  margin: 0 auto;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-transition: background-color 250ms;
+  transition: background-color 250ms;
+  -webkit-box-shadow: 0.25rem 0.25rem 10px 0 0 0/25%;
+          box-shadow: 0.25rem 0.25rem 10px 0 0 0/25%;
+}
+
+.bouton__commander--pink:hover {
+  opacity: 0.8;
+  -webkit-box-shadow: 1rem 1rem 20px 0 0 0/25%;
+          box-shadow: 1rem 1rem 20px 0 0 0/25%;
+}
+/*# sourceMappingURL=pages.css.map */
